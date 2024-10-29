@@ -1,0 +1,31 @@
+@use "../../style/variables" as *;
+@use "../../style/placeholders";
+
+.footer {
+  color: $White;
+  background: $Dark;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  margin-top: 5rem;
+
+  p {
+    margin-bottom: 2rem;
+  }
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  ul {
+    list-style: none;
+  }
+}

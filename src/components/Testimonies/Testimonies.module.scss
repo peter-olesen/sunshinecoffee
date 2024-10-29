@@ -1,0 +1,22 @@
+@use "../../style/placeholders";
+
+.testimonies {
+  text-align: center;
+  margin: 5rem;
+
+  h2 {
+    font-size: 128px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+
+    h3 {
+      margin-bottom: 1rem;
+      @extend %Inika;
+      font-size: 36px;
+    }
+  }
+}

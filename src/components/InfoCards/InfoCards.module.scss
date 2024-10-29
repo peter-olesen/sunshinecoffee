@@ -1,0 +1,16 @@
+.infoCard {
+  max-width: 505px;
+  //   height: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  //   margin: auto;
+
+  h3 {
+    font-size: 64px;
+  }
+
+  img {
+    align-self: baseline;
+  }
+}

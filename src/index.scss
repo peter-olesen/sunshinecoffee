@@ -1,0 +1,35 @@
+@use "./style/variables" as *;
+@use "./style/placeholders";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $Light;
+  @extend %Inika;
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @extend %Licorice;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  color: $White;
+  background: $Dark;
+  border-radius: 8px;
+  border: none;
+  padding: 1.5rem 5rem;
+  cursor: pointer;
+}
