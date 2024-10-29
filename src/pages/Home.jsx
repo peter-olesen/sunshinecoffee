@@ -1,19 +1,19 @@
-import home from "../style/pages/Home.module.scss";
 import { NavLink } from "react-router-dom";
+import home from "../style/pages/Home.module.scss";
 
 import { Header } from "../components/Header/Header";
 import { Seperator } from "../components/Seperator/Seperator";
+import { InfoCards } from "../components/InfoCards/InfoCards";
 import { Testimonies } from "../components/Testimonies/Testimonies";
 
 // Image import
 import coffeeBeans from "../assets/images/coffee-beans.png";
 import coffeeBags from "../assets/images/coffee-bags.png";
 import coffeeCup from "../assets/images/coffee-cup.png";
-import { InfoCards } from "../components/InfoCards/InfoCards";
 
 export const Home = () => {
   return (
-    <>
+    <main>
       <Header />
       <section className={home.info_section}>
         <InfoCards
@@ -43,6 +43,7 @@ export const Home = () => {
           imageUrl={coffeeCup}
         />
       </section>
+      <Seperator />
       <section className={home.shop_section}>
         <h2>Shop now</h2>
         <p>
@@ -56,6 +57,6 @@ export const Home = () => {
       </section>
       <Seperator />
       <Testimonies />
-    </>
+    </main>
   );
 };

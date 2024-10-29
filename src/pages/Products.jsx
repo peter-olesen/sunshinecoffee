@@ -1,3 +1,14 @@
+import { useEffect } from "react";
+
 export const Products = () => {
-  return <div>Products</div>;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+    <>
+      <main className="pageSection">
+        <p>Products</p>
+      </main>
+    </>
+  );
 };

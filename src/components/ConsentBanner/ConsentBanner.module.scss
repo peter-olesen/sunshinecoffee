@@ -1,0 +1,25 @@
+.ConsentBanner {
+  box-sizing: content-box;
+  width: 100vw;
+  height: 5vh;
+  color: black;
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 2rem;
+  border-top: 1px solid black;
+
+  .buttons {
+    text-align: right;
+    padding-right: 1rem;
+  }
+}
+
+.ConsentButton {
+  position: fixed;
+  left: 1rem;
+  bottom: 1rem;
+}

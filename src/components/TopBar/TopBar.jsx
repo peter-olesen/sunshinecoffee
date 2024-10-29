@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import top from "./TopBar.module.scss";
 import topCoffee from "../../assets/images/coffee.png";
 import user from "../../assets/images/user.png";
@@ -7,10 +8,12 @@ export const TopBar = () => {
   return (
     <>
       <div className={top.topbar}>
-        <span className={top.circle}>
-          <p>Sunshine Coffee</p>
-          <img src={topCoffee} alt="" />
-        </span>
+        <NavLink to="/">
+          <span className={top.circle}>
+            <p>Sunshine Coffee</p>
+            <img src={topCoffee} alt="" />
+          </span>
+        </NavLink>
         <div className={top.nav}>
           <img src={user} alt="" />
           <img src={shoppingCart} alt="" />

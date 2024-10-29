@@ -22,15 +22,9 @@ export const Footer = () => {
           <li>
             <NavLink to="/cookie-policy">Cookie policy</NavLink>
           </li>
-          <li>
-            <NavLink to="/return-policy">Return policy</NavLink>
-          </li>
-          <li>
-            <NavLink to="/shipping">Shipping</NavLink>
-          </li>
-          <li>
-            <NavLink to="/terms">Terms and Conditions</NavLink>
-          </li>
+          <li>Return policy</li>
+          <li>Shipping</li>
+          <li>Terms and Conditions</li>
         </ul>
       </div>
       <div>

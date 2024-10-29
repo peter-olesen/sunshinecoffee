@@ -25,11 +25,14 @@ h6 {
   margin: 0;
 }
 
-button {
-  color: $White;
-  background: $Dark;
-  border-radius: 8px;
-  border: none;
-  padding: 1.5rem 5rem;
-  cursor: pointer;
+.pageSection {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1600px;
+
+  p {
+    margin: 1rem 0;
+  }
 }

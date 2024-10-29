@@ -10,9 +10,6 @@ import { Cart } from "./pages/Cart";
 import { Checkout } from "./pages/Checkout";
 import { Login } from "./pages/Login";
 import { CookiePolicy } from "./pages/CookiePolicy";
-import { ReturnPolicy } from "./pages/ReturnPolicy";
-import { Shipping } from "./pages/Shipping";
-import { Terms } from "./pages/Terms";
 import { Guide } from "./pages/Guide";
 
 import { PageNotFound } from "./pages/PageNotFound";
@@ -36,9 +33,6 @@ function App() {
 
               {/* Legal */}
               <Route path={"cookie-policy"} element={<CookiePolicy />} />
-              <Route path={"return-policy"} element={<ReturnPolicy />} />
-              <Route path={"shipping"} element={<Shipping />} />
-              <Route path={"terms"} element={<Terms />} />
 
               {/* Other */}
               <Route path={"guide"} element={<Guide />} />
