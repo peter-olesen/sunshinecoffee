@@ -1,0 +1,63 @@
+@use "../../style/variables" as *;
+@use "../../style/placeholders";
+
+.productsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h2 {
+    text-align: center;
+    font-size: 128px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
+
+    .productCard {
+      width: 480px;
+      background: $ProductCard;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+
+      h3 {
+        @extend %Licorice;
+        font-size: 96px;
+        margin-bottom: 0.5rem;
+      }
+
+      img {
+        width: 350px;
+        height: 350px;
+        border-radius: 0.5rem;
+      }
+
+      .RoastMeter {
+        color: black;
+      }
+
+      .addToCart {
+        background: $ProductCard;
+        color: $Dark;
+        border: 2px solid $Dark;
+        border-radius: 0.5rem;
+        padding: 1.5rem 7.2rem;
+        font-size: 24px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}

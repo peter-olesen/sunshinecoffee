@@ -12,6 +12,11 @@
   padding-bottom: 2rem;
   margin-top: 5rem;
 
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-left: 4rem;
+  }
+
   p {
     margin-bottom: 2rem;
   }

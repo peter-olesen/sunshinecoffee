@@ -4,6 +4,9 @@
   flex-direction: column;
   gap: 2.5rem;
 
+  @media (max-width: 768px) {
+  }
+
   h3 {
     font-size: 64px;
   }

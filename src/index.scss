@@ -32,6 +32,10 @@ h6 {
   justify-content: center;
   max-width: 1600px;
 
+  @media (max-width: 768px) {
+    // align-items: center;
+  }
+
   p {
     margin: 1rem 0;
   }
