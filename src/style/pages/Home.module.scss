@@ -26,17 +26,30 @@
     font-size: 128px;
   }
 
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 96px;
+    }
+  }
+
   p {
-    max-width: 800px;
+    max-width: 900px;
     margin-bottom: 2rem;
   }
 
   button {
     color: $White;
+    font-size: 24px;
     background: $Dark;
     border-radius: 8px;
     border: none;
-    padding: 1.5rem 5rem;
+    padding: 1.5rem 7rem;
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    button {
+      padding: 1.5rem 3rem;
+    }
   }
 }

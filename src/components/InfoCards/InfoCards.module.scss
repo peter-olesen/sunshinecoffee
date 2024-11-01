@@ -1,10 +1,13 @@
 .infoCard {
-  max-width: 505px;
+  max-width: 425px;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
+    img {
+      max-width: 400px;
+    }
   }
 
   h3 {

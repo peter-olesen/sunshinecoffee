@@ -8,6 +8,12 @@
     font-size: 128px;
   }
 
+  @media (max-width: 768px) {
+    h2 {
+      font-size: 96px;
+    }
+  }
+
   .content {
     display: flex;
     flex-direction: row;

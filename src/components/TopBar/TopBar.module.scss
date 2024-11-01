@@ -15,6 +15,25 @@
     align-items: center;
     gap: 2rem;
     margin-right: 1rem;
+
+    @media (max-width: 425px) {
+    }
+
+    select {
+      width: 100%;
+      background: $Darker;
+      color: $White;
+      border: 1px solid $White;
+      border-radius: 0.5rem;
+      outline: none;
+      padding: 0.3rem 1rem;
+      appearance: none;
+      -webkit-appearance: none;
+    }
+
+    .icon {
+      cursor: pointer;
+    }
   }
 
   .circle {

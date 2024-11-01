@@ -1,16 +1,25 @@
 .ConsentBanner {
   box-sizing: content-box;
-  width: 100vw;
-  height: 5vh;
+  width: 100%;
+  height: auto;
   color: black;
   background: white;
   position: fixed;
   left: 0;
   bottom: 0;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
   padding: 2rem;
   border-top: 1px solid black;
+
+  @media (max-width: 768px) {
+    width: 768px;
+
+    p {
+      margin-right: 2rem;
+    }
+  }
 
   .buttons {
     text-align: right;

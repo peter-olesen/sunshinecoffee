@@ -1,0 +1,41 @@
+@use "../variables" as *;
+@use "../placeholders";
+
+.section {
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1600px;
+
+  .grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1600px;
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      max-width: 500px;
+    }
+
+    .addToCart {
+      background: $ProductCard;
+      color: $Dark;
+      border: 2px solid $Dark;
+      border-radius: 0.5rem;
+      padding: 1.5rem 7.2rem;
+      font-size: 24px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      cursor: pointer;
+    }
+
+    img {
+      border-radius: 0.5rem;
+    }
+  }
+}

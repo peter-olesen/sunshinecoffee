@@ -24,7 +24,7 @@
     }
 
     .productCard {
-      width: 480px;
+      max-width: 425px;
       background: $ProductCard;
       border-radius: 1rem;
       display: flex;
@@ -36,6 +36,12 @@
         @extend %Licorice;
         font-size: 96px;
         margin-bottom: 0.5rem;
+        text-align: center;
+      }
+
+      a {
+        color: $Black;
+        text-decoration: none;
       }
 
       img {
@@ -57,6 +63,7 @@
         font-size: 24px;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        cursor: pointer;
       }
     }
   }

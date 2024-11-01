@@ -32,6 +32,10 @@ h6 {
   justify-content: center;
   max-width: 1600px;
 
+  .payment {
+    text-align: center;
+  }
+
   @media (max-width: 768px) {
     // align-items: center;
   }

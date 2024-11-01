@@ -1,0 +1,102 @@
+@use "../variables" as *;
+@use "../placeholders";
+
+h2 {
+  font-size: 128px;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.checkout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  .customerInfo {
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        font-size: 20px;
+      }
+
+      input {
+        font-size: 32px;
+        border: 1px solid $Black;
+        border-radius: 0.5rem;
+        background: $Light;
+        width: 662px;
+        height: 92px;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  .products {
+    font-size: 32px;
+
+    .cartProduct {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding-bottom: 1rem;
+      border-bottom: 1px solid $Black;
+
+      .price {
+        text-align: right;
+      }
+    }
+  }
+
+  .totalPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 32px;
+    margin-top: 1rem;
+  }
+
+  .shipping {
+    font-size: 24px;
+    border: 1px solid $Black;
+    border-radius: 0.5rem;
+    padding: 3rem;
+    margin-top: 5rem;
+
+    p {
+      text-align: center;
+    }
+
+    form {
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2rem;
+      }
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      background: $Dark;
+      color: $White;
+      font-size: 24px;
+      padding: 1.5rem 0;
+      margin: 2rem 0;
+      border-radius: 0.5rem;
+      border: none;
+      width: 100%;
+    }
+  }
+}
